@@ -42,6 +42,7 @@ void draw() {
   }
 
 
+  //progress bar
   float fr = frameCount%loopLength;
   float rx = map(fr, 0, loopLength, 0, width);
   

@@ -5,7 +5,6 @@ int margin = 50;
 boolean doExport = false;
 void setup() {
 
-  //size(405, 720);
   size(960, 540);
   background(0);
   randomSeed(0);
@@ -37,9 +36,11 @@ void draw() {
     parts[i].draw();
   }
 
-
+  //progress bar
   float fr = frameCount%loopLength;
   float rx = map(fr, 0, loopLength, 0, width);
+  fill(100, 0, 0);
+  rect(0, 0, width, 10);
   fill(255, 0, 0);
   rect(0, 0, rx, 10);
 
